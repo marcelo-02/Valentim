@@ -26,6 +26,21 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.botao-play {
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .botao-play:hover {
+      background-color: #e255a1;
+    }
+
 div{
     max-width: 800px;
     background-color: #f39da2;
@@ -34,10 +49,23 @@ div{
     height: auto;
 }
 
+div p abbr{
+    text-decoration: underline;
+    color: rgb(245, 32, 32);
+}
+
 
 div h1{
     text-align: center;
-    padding-top: 10px;
+    background-image: url(/img/fotos/borda.jpg);
+    background-size: cover;
+    background-position: center -110px;
+    background-repeat: no-repeat;
+    max-width: 300px;
+    margin: auto;
+    color: rgb(247, 5, 146);
+    font-size: 45px;
+    border-radius: 20px;
 }
 
 div p{
