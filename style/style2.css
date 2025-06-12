@@ -1,4 +1,4 @@
-@charset "UTF 8";
+@charset "UTF-8";
 @font-face {
   font-family: 'Romantica';
   src: url('fontes/Romantica.otf') format('opentype');
@@ -25,21 +25,6 @@ body{
 #letranormal{
     font-family: 'Times New Roman', Times, serif;
 }
-
-.botao-play {
-      background-color: #ff69b4;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      font-size: 18px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .botao-play:hover {
-      background-color: #e255a1;
-    }
 
 div{
     max-width: 800px;
@@ -86,17 +71,22 @@ div p{
     background-position: center -100px;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    position: relative;
+    box-shadow: 0.5px 0.5px 4px black;
+    border-radius: 15px 15px 6px 6px;
+}
+
+#imgpcel1{
+    display: none;
 }
 
 #paracomimg1 p{
     background-color: rgba(4, 34, 90, 0.534);
-    border-radius: 15px 15px 0px 0px;
     color: rgb(255, 255, 255);
     padding-top: 10px;
     margin: 0px;
     padding-bottom: 10px;
-    box-shadow: 0.5px 0.5px 4px black;
+    border-radius: 15px 15px 6px 6px;
 }
 
 #paracomimg2{
@@ -112,12 +102,16 @@ div p{
 
 #paracomimg2 p{
     background-color: #f0ccaa83;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 6px 6px;
     color: rgb(0, 0, 0);
     padding-top: 10px;
     margin: 0px;
     padding-bottom: 10px;
-    box-shadow: 0.5px 0.5px 4px black;
+    box-shadow: 0px 1px 4px black;
+}
+
+#imgpcel2{
+    display: none;
 }
 
 #paracomimg3{
@@ -130,6 +124,10 @@ div p{
     margin-left: 40px;
     margin-right: 10px;
     margin-bottom: 15px;
+}
+
+#imgpcel3{
+    display: none;
 }
 
 #paracomimg3 p{
@@ -162,8 +160,6 @@ div p{
     box-shadow: 0.5px 0.5px 4px black;
 }
 
-
-
 #ultimoparagrafo{
     margin-top: 20px;
     margin-left: 10px;
@@ -182,4 +178,72 @@ div p{
     border-radius: 15px 15px 0px 0px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#imgpcel4{
+    display: none;
+}
+
+@media (max-width: 768px) {
+  div {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  div h1 {
+    font-size: 25px;
+    max-width: 90%;
+  }
+  
+  div p {
+    font-size: 16px;
+  }  
+
+  #imgpcel1,
+  #imgpcel2,
+  #imgpcel3,
+  #imgpcel4{
+    display: block;
+    width: 95%;
+    border-radius: 15px 15px 5px 5px;
+    padding-top: 8px;
+  }
+
+  #paracomimg1{
+    background-image: none;
+    height: auto;
+  }
+  #paracomimg2{
+    background-image: none;
+    height: auto;
+  }
+  
+  #paracomimg3{
+    background-image: none;
+    margin: 15px;
+    height: auto;
+    width: 95%;
+  }
+
+  #paracomimg3 p{
+    width: auto;
+    border-radius: 15px 15px 6px 6px;
+    height: auto;
+  }
+
+  #ultimoparagrafo{
+    background-image: none;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  #ultimoparagrafo p{
+    border-radius: 15px 15px 6px 6px;
+  }
+
+  audio {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+  }
 }
